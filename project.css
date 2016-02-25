@@ -13,12 +13,15 @@ body {
     font-weight: 400;
 }
 
-h3, h5{
+h3, h4, h5{
     font-family: 'Arvo', serif;
     font-weight: 400;
     /*text-align: center;*/
 }
 
+h4 {
+    text-transform: uppercase;
+}
 a {
     text-decoration: none;
     
