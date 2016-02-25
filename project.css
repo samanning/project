@@ -8,8 +8,8 @@
 
 /*=== colors & typography ==*/
 body {
-    background-color: #ffffff;
-    font-family: 'Muli', Arial, sans-serif;
+    background-color: #FFFFFF;
+    font-family: 'Muli', 'Arial', sans-serif;
     font-weight: 400;
 }
 
@@ -22,7 +22,13 @@ h3, h4, h5{
 h4 {
     text-transform: uppercase;
 }
+
 a {
     text-decoration: none;
     
+}
+
+header{
+    background-color:#ADCD39;
+    color: #FFFFFF;
 }
