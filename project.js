@@ -6,4 +6,10 @@
 $(document).ready(function(){
     
     console.log('ready');
+    
+    //click event to start
+    //$('#home').click(function(){
+        //call function to go to nav
+        
+    //
 })
