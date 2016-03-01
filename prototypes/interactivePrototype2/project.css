@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Arvo|Muli);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=== colors & typography ==*/
+body {
+    background-color: #FFFFFF;
+    font-family: 'Muli', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+h3, h4, h5{
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    /*text-align: center;*/
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+header{
+    background-color:#ADCD39;
+    color: #FFFFFF;
+}
+
+/*== positioning ==*/
+#mainMenu li a{
+    margin-bottom: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+} 
+
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.marginBtmSm {
+    margin-bottom: 15px;
+}
+
+.marginBtmMd {
+    margin-bottom: 30px;
+}
+
+.marginBtmLg {
+    margin-bottom: 50px;
+}
+
+/*== extras ==*/
+.button {
+    color: #5EB246;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    border: solid 1px;
+    display: inline-block;
+    border-radius: 25px;
+    border-width: 2px;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    /*transition: border-color 0.25s ease;*/
+}
+
+h6 {
+    visibility: hidden;
+}
+
+
+/*== grid ==*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 955px;
+    margin: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.one-whole {
+    width: 100%;
+}
+
+.one-half {
+    width: 50%;
+}
+
+.one-third {
+    width: 33%;
+}
+
+.one-fourth {
+    width: 25%;
+}
