@@ -7,21 +7,25 @@
     <title>Play Game</title>
 
     <!--css link-->
-    <link type="text/css" href="../interactivePrototype3/project.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link type="text/css" href="../interactivePrototype3/css/project.css" rel="stylesheet">
 
     <!--js links-->
     <!--jQuery first-->
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
     <!--custom js-->
-        <script src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../interactivePrototype3/project.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../interactivePrototype3/js/project.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="playHeader" class="marginBtmSm">
+        <img src="media/navIconGreen.png" width=21 height=17 class="navIcon">
+        <!--
         <h4>Play Game</h4>
         <img src="media/navIcon2.png" width=21 height=17>
+-->
         <!--
         <nav>
             <ul>
@@ -34,27 +38,26 @@
 -->
     </header>
 
-<div class="container">
-
-        <section id="bins">
+    <div class="container2">
+        <section id="bins" class="marginBtmMd">
             <div class="row">
                 <div class="one-third column">
                     <h4 class="binName">Compost</h4>
-                    <img src="../interactivePrototype3/media/compostBin.png" alt="compost bin" width=112 height=108 class="bin">
+                    <img src="../interactivePrototype3/media/compostBin.png" alt="compost bin" width=112 height=108 class="binC">
                 </div>
                 <div class="one-third column">
                     <h4 class="binName">Recycle</h4>
-                    <img src="../interactivePrototype3/media/recycleBin.png" alt="compost bin" width=112 height=108 class="bin">
+                    <img src="../interactivePrototype3/media/recycleBin.png" alt="compost bin" width=112 height=108 class="binR">
                 </div>
                 <div class="one-third column">
                     <h4 class="binName">Landfill</h4>
-                    <img src="../interactivePrototype3/media/landfillBin.png" alt="compost bin" width=112 height=108 class="bin">
+                    <img src="../interactivePrototype3/media/landfillBin.png" alt="compost bin" width=112 height=108 class="binL">
                 </div>
             </div>
         </section>
 
-            <img src="../interactivePrototype3/media/chopsticks.png" alt="chopsticks" width=203 height=75 class="object">
-        
+        <img src="../interactivePrototype3/media/chopsticks.png" alt="chopsticks" width=203 height=75 class="object">
+        <h5 class="objName">Chopsticks</h5>
 
         <footer>
         </footer>

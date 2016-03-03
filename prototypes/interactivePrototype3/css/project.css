@@ -17,6 +17,7 @@ body {
 
 h3, 
 header h4,
+.binName,
 h5 {
     font-family: 'Arvo', serif;
     font-weight: 400;
@@ -32,11 +33,15 @@ header {
     background-color: #ADCD39;
     color: #FFFFFF;
 }
-/*
-#bins h4 .binName {
-    color: green;
+
+#playHeader {
+    background-color: #FFFFFF;
 }
-*/
+
+.objName {
+    color: #4A4A4A;
+}
+
 
 /*== extras ==*/
 
@@ -95,9 +100,10 @@ a {
     text-decoration: none;
 }
 
-.navIcon {
+img .navIcon{
     text-align: left;
 }
+
 
 /*== grid ==*/
 
@@ -107,6 +113,12 @@ a {
 
 .container {
     width: 360px;
+    margin: auto;
+}
+
+.container2 {
+    width: 640px;
+    height: 360px;
     margin: auto;
 }
 
@@ -132,6 +144,3 @@ a {
     width: 33%;
 }
 
-.one-fourth {
-    width: 25%;
-}
