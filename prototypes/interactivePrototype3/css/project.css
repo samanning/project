@@ -15,10 +15,7 @@ body {
     text-align: center;
 }
 
-h3, 
-header h4,
-.binName,
-h5 {
+h2, h3, header h4, .binName, h5 {
     font-family: 'Arvo', serif;
     font-weight: 400;
     text-align: center;
@@ -41,7 +38,6 @@ header {
 .objName {
     color: #4A4A4A;
 }
-
 
 /*== extras ==*/
 
@@ -69,6 +65,7 @@ h6 {
 /*== positioning ==*/
 header {
     margin-bottom: 70px;
+    padding: 10px;
 }
 
 .marginBtmSm {
@@ -100,10 +97,27 @@ a {
     text-decoration: none;
 }
 
-img .navIcon{
+nav .navIcon{
+    float: left;
+    padding-right: 150px;
+}
+
+nav #playNav {
+    float: left;
+    padding-right: 200px;
+}
+
+body p{
+    width: 340px;
+    margin: auto;
     text-align: left;
 }
 
+header h4 {
+    float: right;
+    width: 200%;
+    margin: auto;
+}
 
 /*== grid ==*/
 
