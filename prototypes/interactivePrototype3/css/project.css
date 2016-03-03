@@ -39,6 +39,11 @@ header {
     color: #4A4A4A;
 }
 
+.sectTitle {
+    font-size: 20px;
+    font-family: 'Muli', 'Arial', sans-serif;
+}
+
 /*== extras ==*/
 
 .button {
@@ -102,15 +107,24 @@ nav .navIcon{
     padding-right: 150px;
 }
 
-nav #playNav {
+nav .navIconPlay {
     float: left;
-    padding-right: 200px;
 }
 
 body p{
-    width: 340px;
+    width: 330px;
     margin: auto;
     text-align: left;
+    padding-bottom: 15px;
+    line-height: 21px;
+}
+
+body ol li {
+    width: 300px;
+    margin: auto;
+    text-align: left;
+     padding-bottom: 15px;
+    line-height: 21px;
 }
 
 header h4 {
