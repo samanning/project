@@ -71,6 +71,10 @@ h6 {
     visibility: hidden;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
 /*== positioning ==*/
 header {
     margin-bottom: 70px;
@@ -183,3 +187,10 @@ footer h5 {
     width: 33%;
 }
 
+.one-fourth {
+    width: 25%;
+}
+
+.one-fifth {
+    width: 20%;
+}
