@@ -21,11 +21,19 @@
 
 <body>
     <div class="container2">
-        <header id="playHeader" class="marginBtmSm">
-            <nav>
-                <img src="media/navIconGreen.png" width=21 height=17 class="navIconPlay">
-            </nav>
-        </header>
+        <div class="row">
+            <header id="playHeader" class="marginBtmSm">
+                <div class="one-half column">
+                    <nav>
+                        <img src="media/navIconGreen.png" width=21 height=17 class="navIconPlay">
+                    </nav>
+                </div>
+
+                <div class="one-half column">
+                    <h5 id="level">LEVEL 1/5</h5>
+                </div>
+            </header>
+        </div>
         <!--
         <h4>Play Game</h4>
         <img src="media/navIcon2.png" width=21 height=17>
@@ -41,36 +49,59 @@
         </nav>
 -->
 
-        <section id="bins" class="marginBtmMd">
+        <section id="bins" class="marginBtmLg">
             <div class="row">
                 <div class="one-third column">
-                    <h4 class="binName">Compost</h4>
-                    <img src="../interactivePrototype4/media/compostBin.png" alt="compost bin" width=112 height=108 class="binC">
+                    <h4 class="binName">COMPOST</h4>
+                    <img src="../interactivePrototype4/media/compostBin.png" alt="compost bin" width=97 height=94 class="binC">
                 </div>
                 <div class="one-third column">
-                    <h4 class="binName">Recycle</h4>
-                    <img src="../interactivePrototype4/media/recycleBin.png" alt="compost bin" width=112 height=108 class="binR">
+                    <h4 class="binName">RECYCLE</h4>
+                    <img src="../interactivePrototype4/media/recycleBin.png" alt="compost bin" width=97 height=94 class="binR">
                 </div>
                 <div class="one-third column">
-                    <h4 class="binName">Landfill</h4>
-                    <img src="../interactivePrototype4/media/landfillBin.png" alt="compost bin" width=112 height=108 class="binL">
+                    <h4 class="binName">LANDFILL</h4>
+                    <img src="../interactivePrototype4/media/landfillBin.png" alt="compost bin" width=97 height=94 class="binL">
                 </div>
             </div>
         </section>
-        <nav>
-            <ul>
-                <li> <img src="../interactivePrototype4/media/chopsticks.png" alt="chopsticks" width=122 height=47 class="object" id="chopsticks"></li>
-                <li> <img src="../interactivePrototype4/media/sushiLid.png" alt="sushi container lid" width=116 height=73 class="object" id="sushiLid" </li>
-                    <li> <img src="../interactivePrototype4/media/tray.png" alt="sushi tray" width=112 height=69 class="object" id="sushiLid" </li>
+        
+        <nav class="marginBtmI">
+            <div class="row">
+                <ul>
+                    <div class="one-fifth column">
+                        <li> <img src="../interactivePrototype4/media/wasabi.png" alt="wasabi" width=26 height=26 class="object" id="wasabi" </li>
+                            <h5 class="itemName1">Wasabi</h5>
+                    </div>
+
+                    <div class="one-fifth column">
                         <li> <img src="../interactivePrototype4/media/soySauce.png" alt="soy sauce packet" width=22 height=53 class="object" id="soySauce" </li>
-                            <li> <img src="../interactivePrototype4/media/wasabi.png" alt="wasabi" width=26 height=26 class="object" id="wasabi" </li>
+                            <h5 class="itemName2">Soy Sauce Packet</h5></div>
 
-            </ul>
+                    <div class="one-fifth column">
+                        <li> <img src="../interactivePrototype4/media/chopsticks.png" alt="chopsticks" width=122 height=47 class="object" id="chopsticks"></li>
+                        <h5 class="itemName3">Wooden Chopsticks</h5>
+                    </div>
 
+                    <div class="one-fifth column">
+                        <li> <img src="../interactivePrototype4/media/sushiLid.png" alt="sushi container lid" width=116 height=73 class="object" id="sushiLid" </li>
+                            <h5 class="itemName4">Plastic Sushi Tray Lid</h5>
+                    </div>
 
+                    <div class="one-fifth column">
+                        <li> <img src="../interactivePrototype4/media/tray.png" alt="sushi tray" width=112 height=69 class="object" id="tray" </li>
+                            <h5 class="itemName5">Plastic Sushi Tray</h5></div>
+
+                </ul>
+
+            </div>
         </nav>
         <footer>
-            <h5>Level 1/5</h5>
+            <div class="row">
+                <div class="one-whole column">
+                    <h4 id="msg"></h4>
+                </div>
+            </div>
         </footer>
     </div>
 

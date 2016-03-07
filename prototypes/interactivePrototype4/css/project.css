@@ -13,6 +13,7 @@ body {
     font-family: 'Muli', 'Arial', sans-serif;
     font-weight: 400;
     text-align: center;
+    color: #4A4A4A;
 }
 
 h2, h3, header h4, .binName{
@@ -31,12 +32,12 @@ header {
     color: #FFFFFF;
 }
 
-#playHeader {
-    background-color: #FFFFFF;
+.binName {
+    letter-spacing: 1px;
 }
 
-.objName {
-    color: #4A4A4A;
+#playHeader {
+    background-color: #FFFFFF;
 }
 
 .sectTitle {
@@ -44,8 +45,13 @@ header {
     font-family: 'Muli', 'Arial', sans-serif;
 }
 
-h5 {
+h5, header h5 {
     font-family: 'Muli', 'Arial', sans-serif;
+}
+
+#msg {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
 }
 
 /*== extras ==*/
@@ -85,6 +91,10 @@ header {
     margin-bottom: 15px;
 }
 
+.marginBtmI {
+    margin-bottom: 23px;
+}
+
 .marginBtmMd {
     margin-bottom: 30px;
 }
@@ -99,6 +109,10 @@ header {
 
 .marginTopLg{
     margin-top: 50px;
+}
+
+.marginTopXLg{
+    margin-top: 55px;
 }
 
 #mainMenu li {
@@ -143,9 +157,21 @@ header h4 {
     width: 200%;
     margin: auto;
 }
-
+/*
 footer h5 {
     float: right;
+}
+*/
+
+header h5 {
+    float:right;
+    color: #ADCD39;
+}
+
+#msg {
+    float:left;
+    color: #5EB246;
+    font-size: 16px;
 }
 
 /*== grid ==*/
