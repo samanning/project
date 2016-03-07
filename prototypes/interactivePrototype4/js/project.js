@@ -10,7 +10,6 @@ audioCorrect.src = 'media/correct.mp3';
 audioIncorrect.controls = true;
 audioIncorrect.src = 'media/wrong.mp3';
 
-
 $(document).ready(function () {
 
     console.log('ready');
@@ -19,7 +18,9 @@ $(document).ready(function () {
     $('.itemName3').hide();
     $('.itemName4').hide();
     $('.itemName5').hide();
+    $('#nextLevel').hide();
 
+    counterForDropped = $('#wasteItems').find('.object').length;
 
     $('#wasabi').draggable({
         cursor: 'grab',
@@ -76,7 +77,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Plastic sauce containers cannot be recycled because they are dirty and not reusable.').css('color', '#D0021B');
+                $('#msg').html('Plastic or aluminum condiment packets and containers cannot be recycled.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -140,6 +141,8 @@ $(document).ready(function () {
             $('.itemName1').hide();
             $('.itemName3').hide();
             $('#msg').html('Way to go! Composting helps us reach zero waste!').css('color', '#5EB246');
+            counterForDropped--;
+            checkLastDrop();
         }
     })
 
@@ -151,6 +154,8 @@ $(document).ready(function () {
             $('.itemName4').hide();
             $('.itemName5').hide();
             $('#msg').html('That is correct! Please dump any liquids or food scraps from containers before placing in bin.').css('color', '#5EB246');
+            counterForDropped--;
+            checkLastDrop();
         }
 
     })
@@ -162,7 +167,17 @@ $(document).ready(function () {
             $('.itemName2').hide();
             $(ui.draggable).remove();
             $('#msg').html('Good job! Try to limit disposing waste into the landfill bin.').css('color', '#5EB246');
+            counterForDropped--;
+            checkLastDrop();
         }
     })
+
+    function checkLastDrop() {
+        if (counterForDropped === 0) {
+            alert('all dropped');
+            $('#msg').hide();
+            $('#nextLevel').show();
+        }
+    }
 
 })
