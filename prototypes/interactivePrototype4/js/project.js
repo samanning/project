@@ -88,7 +88,7 @@ $(document).ready(function () {
         },
     })
 
-    $('#tray').draggable({
+    $('#sushiLid').draggable({
         cursor: 'grab',
         opacity: 0.6,
         scope: 'compost',
@@ -110,7 +110,7 @@ $(document).ready(function () {
         },
     })
 
-    $('#sushiLid').draggable({
+    $('#tray').draggable({
         cursor: 'grab',
         opacity: 0.6,
         scope: 'compost',
@@ -121,7 +121,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Oops, try again. The Memorial Union uses compostable sushi containers.').css('color', '#D0021B');
+                $('#msg').html('Oops, try again. Plastics labeled with "PLA" are compostable.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
