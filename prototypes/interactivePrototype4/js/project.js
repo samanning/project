@@ -77,7 +77,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Oops... Plastic or condiment packets and containers can actually be recycled.').css('color', '#D0021B');
+                $('#msg').html('Oops... Plastic or aluminum condiment packets and containers can actually be recycled.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
