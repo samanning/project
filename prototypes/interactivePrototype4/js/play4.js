@@ -22,10 +22,10 @@ $(document).ready(function () {
 
     counterForDropped = $('#wasteItems').find('.object').length;
 
-    $('#wasabi').draggable({
+    $('#chipsBag').draggable({
         cursor: 'grab',
         opacity: 0.6,
-        scope: 'compost',
+        scope: 'landfill',
         drag: function (event, ui) {
             $('.itemName1').show();
         },
@@ -33,7 +33,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Sorry, try again. All food is compostable.').css('color', '#D0021B');
+                $('#msg').html('Try again. Chip bags belong in landfill unless labelled as compostable.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -44,29 +44,7 @@ $(document).ready(function () {
         },
     })
 
-    $('#chopsticks').draggable({
-        cursor: 'grab',
-        opacity: 0.6,
-        scope: 'compost',
-        drag: function (event, ui) {
-            $('.itemName3').show();
-        },
-        revert: function (wasteObj) {
-            //if false then no waste obj drop occured
-            if (wasteObj === false) {
-                //alert('item does not belong here!');
-                $('#msg').html('Whoops, try again. Natural materials like wood and paper can be composted and broken down by earth worms.').css('color', '#D0021B');
-                //revert the obj by returning true
-                return true;
-            } else {
-                //waste obj was dropped
-                //return false so obj does not revert
-                return false;
-            }
-        },
-    })
-
-    $('#soySauce').draggable({
+    $('#glassBottle').draggable({
         cursor: 'grab',
         opacity: 0.6,
         scope: 'recycle',
@@ -77,7 +55,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Oops... Plastic or condiment packets and containers can actually be recycled.').css('color', '#D0021B');
+                $('#msg').html('Sorry, try again. Glass is recyclable.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -88,18 +66,18 @@ $(document).ready(function () {
         },
     })
 
-    $('#tray').draggable({
+    $('#gum').draggable({
         cursor: 'grab',
         opacity: 0.6,
-        scope: 'compost',
+        scope: 'landfill',
         drag: function (event, ui) {
-            $('.itemName5').show();
+            $('.itemName3').show();
         },
         revert: function (wasteObj) {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Sorry, try again. Sushi containers from the Memorial Union are compostable.').css('color', '#D0021B');
+                $('#msg').html('Close, but gum cannot be broken down naturally.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -109,40 +87,14 @@ $(document).ready(function () {
             }
         },
     })
-
-    $('#sushiLid').draggable({
-        cursor: 'grab',
-        opacity: 0.6,
-        scope: 'compost',
-        drag: function (event, ui) {
-            $('.itemName4').show();
-        },
-        revert: function (wasteObj) {
-            //if false then no waste obj drop occured
-            if (wasteObj === false) {
-                //alert('item does not belong here!');
-                $('#msg').html('Oops, try again. The Memorial Union uses compostable sushi sontainers.').css('color', '#D0021B');
-                //revert the obj by returning true
-                return true;
-            } else {
-                //waste obj was dropped
-                //return false so obj does not revert
-                return false;
-            }
-        },
-    })
-
 
     $('.binC').droppable({
         scope: 'compost',
         drop: function (event, ui) {
             audioCorrect.play();
             $(ui.draggable).remove();
-            $('.itemName1').hide();
-            $('.itemName3').hide();
-            $('.itemName4').hide();
-            $('.itemName5').hide();
-            $('#msg').html('Way to go! Composting helps us reach zero waste!').css('color', '#5EB246');
+            
+            $('#msg').html('Nice work! You are becoming great at composting!').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
@@ -165,8 +117,9 @@ $(document).ready(function () {
         scope: 'landfill',
         drop: function (event, ui) {
             audioCorrect.play();
-            $('.itemName2').hide();
             $(ui.draggable).remove();
+            $('.itemName1').hide();
+            $('.itemName3').hide();
             $('#msg').html('Good job! Try to limit disposing waste into the landfill bin.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
