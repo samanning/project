@@ -121,7 +121,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Almost, but not quite... Coffee cups can be composted since they are made of paper and are soiled by food.').css('color', '#D0021B');
+                $('#msg').html('Almost, but not quite... Coffee cups can be composted since they are made of paper and soiled by food.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {

@@ -77,7 +77,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Try again. Used and unused napkins can be broken down naturally.').css('color', '#D0021B');
+                $('#msg').html('Try again. Used and unused napkins can be composted naturally.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {

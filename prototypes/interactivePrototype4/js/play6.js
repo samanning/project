@@ -118,7 +118,7 @@ $(document).ready(function () {
             $('.itemName2').hide();
             $('.itemName3').hide();
             $('.itemName4').hide();
-            $('#msg').html('Nice job! When compost bins are unavailable, it is best to use recycling bins instead.').css('color', '#5EB246');
+            $('#msg').html('Nice job! If you need to dispose a compostable item but compost bins are unavailable, it is best to use recycling bins instead.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
