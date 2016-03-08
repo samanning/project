@@ -81,6 +81,20 @@ nav ul {
     list-style-type: none;
 }
 
+ input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+     font-size: 14px;
+}
+
+input[type=button], input[type=submit],  input[type=reset]{
+    font-family: 'Muli';
+    font-size: 18px;
+}
+
 /*== positioning ==*/
 header {
     margin-bottom: 70px;
@@ -101,6 +115,10 @@ header {
 
 .marginBtmLg {
     margin-bottom: 50px;
+}
+
+.marginTopSm {
+    margin-top: 15px;
 }
 
 .marginTopMd {
@@ -157,11 +175,6 @@ header h4 {
     width: 200%;
     margin: auto;
 }
-/*
-footer h5 {
-    float: right;
-}
-*/
 
 header h5 {
     float:right;
