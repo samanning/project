@@ -93,7 +93,7 @@ $(document).ready(function () {
         opacity: 0.6,
         scope: 'compost',
         drag: function (event, ui) {
-            $('.itemName5').show();
+            $('.itemName4').show();
         },
         revert: function (wasteObj) {
             //if false then no waste obj drop occured
@@ -115,7 +115,7 @@ $(document).ready(function () {
         opacity: 0.6,
         scope: 'compost',
         drag: function (event, ui) {
-            $('.itemName4').show();
+            $('.itemName5').show();
         },
         revert: function (wasteObj) {
             //if false then no waste obj drop occured
@@ -174,7 +174,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('Nice Work! You can advance to the next level.');
+            //alert('Nice Work! You can advance to the next level.');
             $('#msg').hide();
             $('#nextLevel').show();
         }

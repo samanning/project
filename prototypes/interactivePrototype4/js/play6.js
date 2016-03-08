@@ -140,7 +140,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('Congrats! You completed all 6 levels.');
+            //alert('Congrats! You completed all 6 levels.');
             $('#msg').hide();
             $('#nextLevel').show();
             //$('#noPrize').html('Congratulations! You won.');

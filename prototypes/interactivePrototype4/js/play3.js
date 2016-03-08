@@ -150,7 +150,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('Nice Work! You can advance to the next level.');
+            //alert('Nice Work! You can advance to the next level.');
             $('#msg').hide();
             $('#nextLevel').show();
         }
