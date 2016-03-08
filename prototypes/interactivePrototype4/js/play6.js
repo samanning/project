@@ -19,6 +19,7 @@ $(document).ready(function () {
     $('.itemName4').hide();
     $('.itemName5').hide();
     $('#nextLevel').hide();
+    //$('#prize').hide();
 
     counterForDropped = $('#wasteItems').find('.object').length;
 
@@ -142,7 +143,7 @@ $(document).ready(function () {
             alert('Congrats! You completed all 6 levels.');
             $('#msg').hide();
             $('#nextLevel').show();
-            //$('#prize').show();
+            //$('#noPrize').html('Congratulations! You won.');
         }
     }
 
