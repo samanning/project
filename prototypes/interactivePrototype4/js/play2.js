@@ -121,7 +121,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Almost, but not quite... Coffee cups can be composted.').css('color', '#D0021B');
+                $('#msg').html('Almost, but not quite... Coffee cups can be composted since they are made of paper and are soiled by food.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -143,7 +143,7 @@ $(document).ready(function () {
             $('.itemName3').hide();
             $('.itemName4').hide();
             $('.itemName5').hide();
-            $('#msg').html('Nice! Try to use items that can be composted and turned into healthy organic matter.').css('color', '#5EB246');
+            $('#msg').html('Nice! Try to use items that can be composted and turned into rich organic matter.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
