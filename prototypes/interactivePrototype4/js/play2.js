@@ -77,7 +77,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('This item does not belong there. All paper products can be composted.').css('color', '#D0021B');
+                $('#msg').html('This item belongs in a better bin. All paper products can be composted.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
