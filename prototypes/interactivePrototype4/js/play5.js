@@ -99,7 +99,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Although it looks like plastic, biodegradable plastics should go in the compost bin.').css('color', '#D0021B');
+                $('#msg').html('Although it looks and feels like plastic, biodegradable plastics should go in the compost bin.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
