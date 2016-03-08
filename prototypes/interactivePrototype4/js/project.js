@@ -121,7 +121,7 @@ $(document).ready(function () {
             //if false then no waste obj drop occured
             if (wasteObj === false) {
                 //alert('item does not belong here!');
-                $('#msg').html('Oops, try again. The Memorial Union uses compostable sushi sontainers.').css('color', '#D0021B');
+                $('#msg').html('Oops, try again. The Memorial Union uses compostable sushi containers.').css('color', '#D0021B');
                 //revert the obj by returning true
                 return true;
             } else {
@@ -165,7 +165,6 @@ $(document).ready(function () {
         scope: 'landfill',
         drop: function (event, ui) {
             audioCorrect.play();
-            $('.itemName2').hide();
             $(ui.draggable).remove();
             $('#msg').html('Good job! Try to limit disposing waste into the landfill bin.').css('color', '#5EB246');
             counterForDropped--;
@@ -175,7 +174,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('all dropped');
+            alert('Nice Work! You can advance to the next level.');
             $('#msg').hide();
             $('#nextLevel').show();
         }

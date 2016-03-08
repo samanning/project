@@ -94,7 +94,7 @@ $(document).ready(function () {
             audioCorrect.play();
             $(ui.draggable).remove();
             
-            $('#msg').html('Nice work! You are becoming great at composting!').css('color', '#5EB246');
+            $('#msg').html('Nice work! Composting benefits our campus and our ecosystem!').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
@@ -106,7 +106,7 @@ $(document).ready(function () {
             audioCorrect.play();
             $(ui.draggable).remove();
             $('.itemName2').hide();
-            $('#msg').html('That is correct! Please dump any liquids or food scraps from containers before placing in bin.').css('color', '#5EB246');
+            $('#msg').html('Good job! Did you know? Our campus collects over 21,000 tons of waste.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
@@ -120,7 +120,7 @@ $(document).ready(function () {
             $(ui.draggable).remove();
             $('.itemName1').hide();
             $('.itemName3').hide();
-            $('#msg').html('Good job! Try to limit disposing waste into the landfill bin.').css('color', '#5EB246');
+            $('#msg').html('Yes! Try to avoid throwing waste in the landfill.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('all dropped');
+            alert('Nice Work! You can advance to the next level.');
             $('#msg').hide();
             $('#nextLevel').show();
         }

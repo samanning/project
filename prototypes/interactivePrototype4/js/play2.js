@@ -143,7 +143,7 @@ $(document).ready(function () {
             $('.itemName3').hide();
             $('.itemName4').hide();
             $('.itemName5').hide();
-            $('#msg').html('Way to go! Composting helps us reach zero waste!').css('color', '#5EB246');
+            $('#msg').html('Nice! Try to use items that can be composted and turned into healthy organic matter.').css('color', '#5EB246');
             counterForDropped--;
             checkLastDrop();
         }
@@ -174,7 +174,7 @@ $(document).ready(function () {
 
     function checkLastDrop() {
         if (counterForDropped === 0) {
-            alert('all dropped');
+            alert('Nice Work! You can advance to the next level.');
             $('#msg').hide();
             $('#nextLevel').show();
         }
